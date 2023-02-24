@@ -47,7 +47,8 @@
     </head>
 
     <body class="font-poppins">
-        <nav class="flex pt-4 items-center justify-between md:pt-10 container w-full">
+        <!-- Navbar -->
+        <nav class="flex pt-4 items-center justify-between md:pt-10 w-full px-4 lg:px-[50px]">
             <!-- App Logo -->
             <a href="#" class="mr-auto">
                 <img src="/assets/svg/app-logo.svg" class="w-full" alt="">
@@ -76,10 +77,11 @@
             </div>
         </nav>
 
-        <section id="hero" class="container pt-[100px] pb-[65px]">
-            <div class="grid lg:grid-cols-2 justify-center gap-16  mb-[50px] md:mb-[70px] items-center">
+        <section id="hero" class="container pt-[50px] md:pt-[100px] pb-20 md:pb-[65px]" data-aos="fade-up">
+            <div class="grid lg:grid-cols-2 justify-center gap-16 mb-[50px] md:mb-[70px] items-center">
                 <header class="flex flex-col md:items-center lg:items-start">
-                    <h1 class="font-bold text-dark text-[55px] leading-[82px] text-start md:text-center lg:text-start">
+                    <h1
+                        class="font-bold text-dark text-[38px] md:text-[55px] md:leading-[82px] text-start md:text-center lg:text-start">
                         Manage Payroll <br>
                         Like an Expert
                     </h1>
@@ -88,47 +90,49 @@
                         required any finance skills or knowledge before
                     </p>
                     <a href="#"
-                        class="px-14 py-3 rounded-full bg-primary text-base font-semibold text-center text-white">
+                        class="px-14 py-3 rounded-full bg-primary text-base font-semibold text-center text-white max-w-max">
                         Get Started
                     </a>
                 </header>
 
                 <!-- Illustration -->
-                <img src="/assets/images/payna-illustration01.png" class="w-full h-full object-cover hidden lg:block"
+                <img src="/assets/images/payna-illustration01.png" class="w-full h-auto object-cover hidden lg:block"
                     alt="">
             </div>
 
             <!-- Global Companies -->
-            <div class="flex flex-col lg:flex-row justify-between gap-[30px] items-center">
+            <div class="flex flex-col lg:flex-row justify-between gap-[30px] md:items-center">
                 <p class="text-dark font-semibold text-base">
                     Trusted by <br class="hidden lg:block">
                     Global Companies
                 </p>
-                <div class="flex flex-wrap gap-y-[30px] gap-x-[24px] lg:gap-[50px] justify-start lg:justify-between">
-                    <img src="/assets/svg/logo-apple.svg" class="h-[30px] w-auto" alt="">
-                    <img src="/assets/svg/logo-adobe.svg" class="h-[30px] w-auto" alt="">
-                    <img src="/assets/svg/logo-slack.svg" class="h-[30px] w-auto" alt="">
-                    <img src="/assets/svg/logo-spotify.svg" class="h-[30px] w-auto" alt="">
-                    <img src="/assets/svg/logo-google.svg" class="h-[30px] w-auto" alt="">
+                <div class="flex flex-wrap gap-y-[30px] gap-x-[24px] lg:gap-[40px] xl:gap-[50px] justify-start lg:justify-between">
+                    <img src="/assets/svg/logo-apple.svg" class="h-[26.5px] md:h-[30px] w-auto" alt="">
+                    <img src="/assets/svg/logo-adobe.svg" class="h-[26.5px] md:h-[30px] w-auto" alt="">
+                    <br class="block sm:hidden">
+                    <img src="/assets/svg/logo-slack.svg" class="h-[26.5px] md:h-[30px] w-auto" alt="">
+                    <img src="/assets/svg/logo-spotify.svg" class="h-[26.5px] md:h-[30px] w-auto" alt="">
+                    <img src="/assets/svg/logo-google.svg" class="h-[26.5px] md:h-[30px] w-auto" alt="">
                 </div>
             </div>
         </section>
 
-        <section id="businessFeatures" class="container py-[65px]">
+        <section id="businessFeatures" class="container py-10 md:py-[65px]" data-aos="fade-up">
             <header class="text-center">
                 <p class="text-chiliRed text-base font-bold uppercase">
                     Work Better
                 </p>
-                <h2 class="text-dark text-4xl font-bold mt-[6px] mb-5">
+                <h2 class="text-dark text-[28px] md:text-4xl font-bold mt-[6px] mb-5">
                     For your Business
                 </h2>
-                <p class="text-grey text-base leading-8">
-                    We did research what your company needs and <br class="hidden md:block">
-                    here we are providing all of them just for you
+                <p class="text-grey text-base leading-8 text-center">
+                    We did research what your company <br class="block md:hidden"> needs and <br
+                        class="hidden md:block">
+                    here we are providing <br class="block md:hidden"> all of them just for you
                 </p>
             </header>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[60px] justify-center mt-[70px]">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[60px] justify-center mt-[50px] md:mt-[70px]">
                 <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-briefcase.svg" alt="">
                     <div>
@@ -203,28 +207,27 @@
             </div>
         </section>
 
-
-        <section id="subscribe" class="container py-[65px]">
-            <div class="grid lg:grid-cols-2 gap-20 justify-center items-center">
-                <img src="/assets/images/payna-illustration02.png" class="w-full h-full object-cover" alt="">
+        <section id="subscribe" class="container py-10 md:py-[65px]" data-aos="fade-up">
+            <div class="grid lg:grid-cols-2 gap-10 md:gap-20 justify-center items-center">
+                <img src="/assets/images/payna-illustration02.png" class="w-full h-auto object-cover" alt="">
                 <div>
                     <header class="text-start flex flex-col items-center lg:items-start">
                         <p class="text-chiliRed text-base font-bold uppercase">
                             Save More Time
                         </p>
-                        <h2 class="text-dark text-4xl font-bold mt-[6px] mb-5">
+                        <h2 class="text-dark text-[28px] md:text-4xl font-bold mt-[6px] mb-5">
                             And Boost Productivity
                         </h2>
-                        <p class="text-grey text-base leading-8">
-                            Your employees can bring any success into your <br>
-                            business, so we need to take care of them
+                        <p class="text-grey text-base leading-8 text-center lg:text-start">
+                            Your employees can bring any success into your <br class="hidden md:block">
+                            business, so we need to <br class="block md:hidden"> take care of them
                         </p>
-                        <div class="relative mt-10 inline-flex">
+                        <div class="relative mt-10 flex flex-col md:flex-row gap-3 md:gap-0">
                             <input type="email"
                                 class="rounded-full bg-[#F5F6FB] placeholder:text-grey text-grey text-base py-3 pl-6 pr-14 focus:outline-none focus:ring-2 min-w-[300px]"
                                 placeholder="Email Address">
                             <a href="#"
-                                class="px-14 py-3 rounded-full bg-primary text-base font-semibold text-center text-white -ml-12">
+                                class="px-14 py-3 rounded-full bg-primary text-base font-semibold text-center text-white md:-ml-12">
                                 Get Started
                             </a>
                         </div>
@@ -232,21 +235,13 @@
                 </div>
             </div>
         </section>
-        <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(() => {
-                $('#navbarToggler').on('click', () => {
-                    $('#navigationMenu').animate({
-                        height: "toggle",
-                    });
-                })
-            })
-        </script> -->
+
         <!-- AOS Animation JS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+                duration: 500,
+            });
         </script>
     </body>
 
