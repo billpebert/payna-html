@@ -28,8 +28,8 @@
                         center: true,
                         padding: {
                             DEFAULT: "1rem",
+                            md: "40px",
                             lg: "50px",
-                            xl: "100px",
                         },
                     },
                     extend: {
@@ -47,54 +47,43 @@
     </head>
 
     <body class="font-poppins">
-        <nav class="container flex flex-col pt-4 lg:flex-row lg:items-center lg:justify-between lg:pt-10">
-            <div class="flex items-center justify-between mb-6 lg:mb-0">
-                <!-- App Logo -->
-                <a href="#">
-                    <img src="/assets/svg/app-logo.svg" class="w-full" alt="">
-                </a>
-
-                <!-- NavToggler Icon -->
-                <a href="javascript:void(0)" class="w-6 h-6 block lg:hidden" id="navbarToggler">
-                    <img src="/assets/svg/ic-hamburger.svg" alt="">
-                </a>
-            </div>
+        <nav class="flex pt-4 items-center justify-between md:pt-10 container w-full">
+            <!-- App Logo -->
+            <a href="#" class="mr-auto">
+                <img src="/assets/svg/app-logo.svg" class="w-full" alt="">
+            </a>
 
             <!-- Nav Menus -->
-            <div class="hidden w-full lg:block" id="navigationMenu">
-                <div class="flex flex-col justify-between w-full gap-4 lg:mx-auto lg:flex-row lg:items-center">
-                    <div class="flex flex-col lg:mx-auto lg:items-center lg:flex-row gap-x-[60px] gap-y-4">
-                        <a href="#" class="text-base font-normal capitalize text-dark !font-semibold">
-                            Home
-                        </a>
-                        <a href="#" class="text-base font-normal capitalize text-dark">
-                            Features
-                        </a>
-                        <a href="#" class="text-base font-normal capitalize text-dark">
-                            Showcase
-                        </a>
-                        <a href="#" class="text-base font-normal capitalize text-dark">
-                            Pricing
-                        </a>
-                    </div>
-                    <div class="flex flex-col lg:items-center lg:flex-row gap-x-5 gap-y-4">
-                        <a href="#"
-                            class="px-12 py-3 rounded-full bg-secondary text-base font-normal text-center text-dark">
-                            Sign In
-                        </a>
-                    </div>
+            <div class="block lg:flex lg:justify-between gap-4 lg:mx-auto lg:flex-row lg:items-center lg:w-full">
+                <div class="flex-col lg:mx-auto lg:items-center lg:flex-row gap-x-[60px] gap-y-4 hidden lg:flex">
+                    <a href="#" class="text-base font-normal capitalize text-dark !font-semibold">
+                        Home
+                    </a>
+                    <a href="#" class="text-base font-normal capitalize text-dark">
+                        Features
+                    </a>
+                    <a href="#" class="text-base font-normal capitalize text-dark">
+                        Showcase
+                    </a>
+                    <a href="#" class="text-base font-normal capitalize text-dark">
+                        Pricing
+                    </a>
                 </div>
+                <a href="#"
+                    class="px-12 py-3 rounded-full bg-secondary text-base font-normal text-center text-dark w-max hidden md:block">
+                    Sign In
+                </a>
             </div>
         </nav>
 
         <section id="hero" class="container pt-[100px] pb-[65px]">
-            <div class="grid grid-cols-2 justify-center gap-16  mb-[50px] md:mb-[70px] items-center">
-                <header>
-                    <h1 class="font-bold text-dark text-[55px] leading-[82px]">
+            <div class="grid lg:grid-cols-2 justify-center gap-16  mb-[50px] md:mb-[70px] items-center">
+                <header class="flex flex-col md:items-center lg:items-start">
+                    <h1 class="font-bold text-dark text-[55px] leading-[82px] text-start md:text-center lg:text-start">
                         Manage Payroll <br>
                         Like an Expert
                     </h1>
-                    <p class="mb-[30px] mt-5 text-grey text-base">
+                    <p class="mb-[30px] mt-5 text-grey text-base leading-8 text-start md:text-center lg:text-start">
                         Payna is helping you to setting up the payroll without <br class="hidden md:block">
                         required any finance skills or knowledge before
                     </p>
@@ -115,7 +104,7 @@
                     Trusted by <br class="hidden lg:block">
                     Global Companies
                 </p>
-                <div class="flex flex-wrap gap-[30px] md:gap-[50px]">
+                <div class="flex flex-wrap gap-y-[30px] gap-x-[24px] lg:gap-[50px] justify-start lg:justify-between">
                     <img src="/assets/svg/logo-apple.svg" class="h-[30px] w-auto" alt="">
                     <img src="/assets/svg/logo-adobe.svg" class="h-[30px] w-auto" alt="">
                     <img src="/assets/svg/logo-slack.svg" class="h-[30px] w-auto" alt="">
@@ -134,13 +123,13 @@
                     For your Business
                 </h2>
                 <p class="text-grey text-base leading-8">
-                    We did research what your company needs and <br>
+                    We did research what your company needs and <br class="hidden md:block">
                     here we are providing all of them just for you
                 </p>
             </header>
 
-            <div class="grid grid-cols-3 gap-x-[93px] gap-y-[60px] justify-center mt-[70px]">
-                <div class="flex items-start gap-6 max-w-[310px]">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-[60px] justify-center mt-[70px]">
+                <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-briefcase.svg" alt="">
                     <div>
                         <h6 class="text-dark text-xl font-semibold">
@@ -151,7 +140,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-start gap-6 max-w-[310px]">
+                <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-send.svg" alt="">
                     <div>
                         <h6 class="text-dark text-xl font-semibold">
@@ -163,7 +152,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-start gap-6 max-w-[310px]">
+                <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-no-wifi.svg" alt="">
                     <div>
                         <h6 class="text-dark text-xl font-semibold">
@@ -175,7 +164,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-start gap-6 max-w-[310px]">
+                <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-kanban.svg" alt="">
                     <div>
                         <h6 class="text-dark text-xl font-semibold">
@@ -187,7 +176,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-start gap-6 max-w-[310px]">
+                <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-gift.svg" alt="">
                     <div>
                         <h6 class="text-dark text-xl font-semibold">
@@ -199,7 +188,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex items-start gap-6 max-w-[310px]">
+                <div class="flex items-start gap-6 max-w-[320px]">
                     <img src="/assets/svg/ic-globe.svg" alt="">
                     <div>
                         <h6 class="text-dark text-xl font-semibold">
@@ -216,10 +205,10 @@
 
 
         <section id="subscribe" class="container py-[65px]">
-            <div class="grid grid-cols-2 gap-20 justify-center items-center">
+            <div class="grid lg:grid-cols-2 gap-20 justify-center items-center">
                 <img src="/assets/images/payna-illustration02.png" class="w-full h-full object-cover" alt="">
                 <div>
-                    <header class="text-start">
+                    <header class="text-start flex flex-col items-center lg:items-start">
                         <p class="text-chiliRed text-base font-bold uppercase">
                             Save More Time
                         </p>
@@ -230,15 +219,16 @@
                             Your employees can bring any success into your <br>
                             business, so we need to take care of them
                         </p>
+                        <div class="relative mt-10 inline-flex">
+                            <input type="email"
+                                class="rounded-full bg-[#F5F6FB] placeholder:text-grey text-grey text-base py-3 pl-6 pr-14 focus:outline-none focus:ring-2 min-w-[300px]"
+                                placeholder="Email Address">
+                            <a href="#"
+                                class="px-14 py-3 rounded-full bg-primary text-base font-semibold text-center text-white -ml-12">
+                                Get Started
+                            </a>
+                        </div>
                     </header>
-                    <div class="relative mt-10 inline-flex">
-                        <input type="email"
-                            class="rounded-full bg-[#F5F6FB] placeholder:text-grey text-grey text-base py-3 pl-6 pr-14 focus:outline-none focus:ring-2 min-w-[300px]" placeholder="Email Address">
-                        <a href="#"
-                            class="px-14 py-3 rounded-full bg-primary text-base font-semibold text-center text-white -ml-12">
-                            Get Started
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>
